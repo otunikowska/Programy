@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="kalkulator.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <form id="calculator">
+        <h2>Kalkulator</h2>
+        <h4>Podaj dwie liczby i wybierz dzianie matematyczne</h4>
+        <input type="text" id="first" placeholder="first number">
+        <br><input type="text" id="second" placeholder="second number">
+        <br><div>
+            <button type="button" onclick="Calculator(this.innerHTML)">+</button> 
+            <button type="button" onclick="Calculator(this.innerHTML)">-</button>
+            <button type="button" onclick="Calculator(this.innerHTML)">x</button>   
+            <button type="button" onclick="Calculator(this.innerHTML)">/</button>    
+        </div>
+        <br><input type="text" id="result" placeholder="=" disabled="disabled" />
+    </form>    
+</body>
+</html>
